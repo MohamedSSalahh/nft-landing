@@ -39,7 +39,7 @@ export default function App() {
   },1500)
   return (
     <div data-theme={theme} className='app-container' >
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
         <Navbar changeTheme={changeTheme} currentTheme={theme}/>
         <Home/>
         <Free/>

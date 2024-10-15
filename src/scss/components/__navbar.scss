@@ -40,7 +40,70 @@ nav {
         }
       }
     }
-  }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      
+        position: relative;
+        z-index: 2;
+        padding: 1rem 2rem;
+        .brand-container {
+          z-index: 20;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .brand {
+            img {
+              height: 1.5rem;
+            }
+          }
+          .toggle-container {
+            display: block;
+            color: var(--accent-color1);
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1rem;
+            z-index: 40;
+            .toggle {
+              z-index: 50;
+              display: block;
+            }
+          }
+        }
+        .links-container {
+          z-index: 30;
+          background-image: linear-gradient(101deg, var(--pink), var(--orange));
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          width: 0;
+          visibility: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s ease-in-out;
+          
+          .links {
+            flex-direction: column;
+            li {
+              a {
+                color: var(--background);
+              }
+              &:last-of-type {
+                display: none;
+              }
+            }
+          }
+        }
+        .nav-visible {
+          width: 60vw;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  
   
   [data-theme="light"] {
     nav {
@@ -78,7 +141,7 @@ nav {
           gap: 1rem;
           z-index: 40;
           .toggle {
-            z-index: 40;
+            z-index: 50;
             display: block;
           }
         }
@@ -97,6 +160,7 @@ nav {
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-in-out;
+        
         .links {
           flex-direction: column;
           li {

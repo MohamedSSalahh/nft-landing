@@ -76,35 +76,39 @@ font-weight: bold;
             }
         }
     }
-}
-}  
+  }
+  
 @media screen and (min-width: 280px) and (max-width: 1080px) {
     
-    .container {
-      padding: 1rem 2rem;
-      height: 40vh;
-      border-radius: 0;
-      .background {
-        .pink {
-          left: -70%;
-        }
-        .green {
-          right: -100%;
-        }
+  margin: 0rem;
+  .container{
+    padding: 1rem 2rem ;
+    height: 70vh;
+    border-radius: 0%;
+    .background{
+      .pink{
+        left:70%;
       }
-      .content {
-        padding: 0;
-        font-size: 16px;
-        gap: 1rem;
-        .title {
-          font-size: 22px;
-        }
+      .right{
+        right:-100%;
       }
     }
-    .cards {
+    .contect{
+      
+      font-size: 16px;
+      gap: 1rem;
+      .title{
+        
+      }
+    }
+    }
+    .cards{
       .card1,
-      .card2 {
-        zoom: 0.3;
+      .card2{
+        zoom: .5;
       }
     }
-  }
+}
+}
+
+

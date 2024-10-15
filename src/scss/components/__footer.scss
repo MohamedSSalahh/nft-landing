@@ -54,22 +54,9 @@ footer {
         color: var(--accent-color3);
       }
     }
-  }
-  
-  [data-theme="light"] {
-    footer {
-      .brand-container {
-        .brand {
-          img {
-            filter: brightness(0);
-          }
-        }
-      }
-    }
-  }
-  
+    
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-    footer {
+    
       margin: 0;
       gap: 2rem;
       padding: 1rem 2rem;
@@ -90,4 +77,19 @@ footer {
         gap: 1rem;
       }
     }
+  
   }
+  
+  [data-theme="light"] {
+    footer {
+      .brand-container {
+        .brand {
+          img {
+            filter: brightness(0);
+          }
+        }
+      }
+    }
+
+  }
+  

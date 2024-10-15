@@ -58,8 +58,10 @@ export default function Footer() {
       </div>
       <div className="lower">
         <span>&copy; Copyright 2024 NFT</span>
+        <span>By Mohamed Salah</span>
         <span>Launching october 2024</span>
       </div>
+      
     </footer>
   );
 }

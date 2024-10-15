@@ -75,29 +75,31 @@
         }
       }
     }
-  }}
+  }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
    
-.container{
-  padding: 1rem ;
-  height: 30%;
-  position: relative;
-overflow: hidden;
-margin-top: 1rem ;
-  font-size: 16px;
-  grid-template-columns: .7fr;
-  .image-container{
-    position: absolute;
-    right: -10%;
-    top: 30%;
-    .image{
-      img{
-        height: 10rem;
+    .container{
+      padding: 1rem ;
+      height: 30%;
+      position: relative;
+    overflow: hidden;
+    margin-top: 1rem ;
+      font-size: 16px;
+      grid-template-columns: .7fr;
+      .image-container{
+        position: absolute;
+        left: 80%;
+        top: 30%;
+        .image{
+          img{
+            height: 10rem;
+          }
+        }
       }
     }
-  }
-}
-  }
-
-
-
+      }
+    
+    
+    
+    }

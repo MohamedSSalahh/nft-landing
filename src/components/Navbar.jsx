@@ -17,7 +17,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
             {navState ? (
               <MdClose onClick={() => setNavState(false)} />
             ) : (
-              <GiHamburgerMenu onClick={() => setNavState(true)} />
+              <GiHamburgerMenu onClick={() => setNavState(true)} className="gi" />
             )}
           </div>
           <div className="mode" onClick={changeTheme}>
@@ -31,6 +31,15 @@ export default function Navbar({ changeTheme, currentTheme }) {
       </div>
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
+          <li>
+          <div className="toggle">
+            {navState ? (
+              <MdClose onClick={() => setNavState(false)} />
+            ) : (
+              <GiHamburgerMenu onClick={() => setNavState(true)} className="gi" />
+            )}
+          </div>
+          </li>
           <li>
             <a href="#features">Features</a>
           </li>
