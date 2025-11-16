@@ -1,9 +1,49 @@
-# React + Vite
+## NFT Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern single-page NFT landing interface built with **React**, **Vite**, and **SCSS**, featuring smooth scroll animations and a responsive layout.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend**: React 18, React Router
+- **Build Tooling**: Vite 5
+- **Styling**: SCSS (modular partials for sections and components)
+- **UI / UX Enhancements**: `react-icons`, `scrollreveal`
+- **Code Quality**: ESLint with React-focused rules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# nft-landing
+## Getting Started
+
+### Prerequisites
+- **Node.js** (LTS version recommended)
+- **npm** or **yarn**
+
+### Installation
+```bash
+npm install
+```
+or
+```bash
+yarn
+```
+
+### Development
+```bash
+npm run dev
+```
+
+### Production Build
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## Project Structure (High Level)
+- **`src`**: React components, pages, and SCSS
+  - **`components`**: Reusable UI pieces (cards, navbar, footer, sections, etc.)
+  - **`scss`**: Base styles, section styles, and component styles
+
+## License
+
+This project is for learning and demonstration purposes. Adapt and extend it as needed.
